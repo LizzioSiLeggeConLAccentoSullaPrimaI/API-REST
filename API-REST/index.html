@@ -1,0 +1,77 @@
+<html>
+	<head>
+		<title>Francesco Lizzio - API REST</title>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script src="js.js" type="text/javascript"></script>
+	</head>
+	<body onload="carica()">
+		<center><br><br>
+			<form id="form1">
+				<div>
+					<div style="color: white; background-color: SLATEGRAY; width: 1000px; height: 50px;">
+						<h3>Manage <b>Employees</b>
+							<a onclick="elimina()">
+								<img src="immagini/delete.jpg" style="width: 30px; height: 30px; margin-left: 700px; margin-top: 12px;">
+							</a>
+							<a onclick="aggiungi()">
+								<img src="immagini/add.jpg" style="width: 30px; height: 30px;">
+							</a>
+						</h3>
+					</div>
+					<div>
+						<table style="width: 1000px;" id="container">
+							<tr>
+								<td>
+									<input onClick="box(this)" type="checkbox" id="checkbox">
+								</td>
+								<td>
+									<p><b>Name</b></p>
+								</td>
+								<td>
+									<p><b>Last name</b></p>
+								</td>
+								<td>
+									<p><b>Address</b></p>
+								</td>
+								<td>
+									<p><b>Phone</b></p>
+								</td>
+								<td colspan="2">
+									<p><b>Action</b></p>
+								</td>
+							</tr>
+						</table>
+					</div>
+				</div>
+			</form>
+			<form id="form2">
+				<div style="width: 400px; background-color: gray;">
+					<div style="height: 50px;">
+						<h3>Manage <b>Employees</b></h3>
+					</div>
+					<div style="height: 180px;">
+						<div><br>
+							<div>
+								<input id="name" type="text" placeholder="Name">
+							</div>
+							<div>
+								<input id="lastname" type="text" placeholder="Last name">
+							</div>
+							<div>
+								<input id="indirizzo" type="text" placeholder="Address">
+							</div>
+							<div>
+								<input id="telefono" type="text" placeholder="Phone">
+							</div><br>
+							<div>
+								<a onclick="add()">
+									<img src="immagini/add.jpg" style="width: 30px; height: 30px;">
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</form>
+		</center>
+	</body>
+</html>
